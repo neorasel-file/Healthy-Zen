@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Way | Balance & Energy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        :root {
+            --gradient: linear-gradient(135deg, #76b852, #8DC26F, #4ca1af);
+            --text-muted: #7f8c8d;
+        }
+
+        header {
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.4rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            animation: fadeIn 1s ease;
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            max-width: 600px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(76,161,175,0.3);
+        }
+
+        .section {
+            padding: 5rem 10%;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #bdc3c7;
+        }
+
+        @keyframes fadeIn {
+            from {opacity:0; transform:translateY(10px)}
+            to {opacity:1; transform:translateY(0)}
+        }
+
+        @media(max-width:768px){
+            h1{font-size:2rem;}
+            header{padding:1rem 5%;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">HEALTHY WAY</div>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="icon">HW</div>
+    <h1>Your Path to Balance</h1>
+    <p>Experience a premium wellness journey blending natural energy and modern science for a healthier lifestyle.</p>
+    <a href="#features" class="btn">Get Started</a>
+</section>
+
+<section class="section" id="features">
+    <h2>Our Features</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Natural Energy</h3>
+            <p>Boost your energy with balanced and natural wellness practices.</p>
+        </div>
+        <div class="card">
+            <h3>Science-Based</h3>
+            <p>Modern research-backed methods for a healthier lifestyle.</p>
+        </div>
+        <div class="card">
+            <h3>Daily Balance</h3>
+            <p>Simple routines to keep your body and mind in harmony.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Healthy Way is dedicated to helping people achieve balance in life through simple, effective wellness strategies that combine nature and science.</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: support@healthyway.com</p>
+</section>
+
+<footer>
+    &copy; 2026 Healthy Way. All rights reserved.
+</footer>
+
+</body>
+</html>
